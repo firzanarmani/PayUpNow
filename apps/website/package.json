@@ -1,0 +1,37 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prepare": "npm run ui:codegen",
+    "ui:codegen": "panda codegen",
+    "build": "vite build",
+    "clean": "rm -rf dist",
+    "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@payupnow/design-system": "workspace:*",
+    "@payupnow/styled-system": "workspace:^",
+    "@tanstack/react-query": "^5.51.21",
+    "@tanstack/react-router": "^1.46.6",
+    "hono": "^4.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.44.0",
+    "@payupnow/eslint-config": "workspace:*",
+    "@payupnow/typescript-config": "workspace:*",
+    "@tanstack/react-query-devtools": "^5.51.21",
+    "@tanstack/router-devtools": "^1.46.6",
+    "@tanstack/router-vite-plugin": "^1.46.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "api": "workspace:*",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
+  }
+}

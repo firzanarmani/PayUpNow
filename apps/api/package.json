@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "types": "./src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "wrangler d1 migrations apply payupnow-db"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "@payupnow/logger": "workspace:*",
+    "drizzle-orm": "^0.33.0",
+    "drizzle-zod": "^0.5.1",
+    "hono": "^4.5.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.4.22",
+    "@cloudflare/workers-types": "^4.20240806.0",
+    "@payupnow/eslint-config": "workspace:*",
+    "@payupnow/typescript-config": "workspace:*",
+    "@types/node": "^22.0.2",
+    "drizzle-kit": "^0.24.0",
+    "typescript": "^5.5.4",
+    "vitest": "1.5.0",
+    "wrangler": "^3.72.0"
+  }
+}

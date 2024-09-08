@@ -1,0 +1,10 @@
+{
+  "extends": "@payupnow/typescript-config/react-library.json",
+  "compilerOptions": {
+    "lib": ["dom", "ES2015"],
+    "types": ["node"],
+    "allowJs": true
+  },
+  "include": [".", "../../packages/styled-system"],
+  "exclude": ["dist", "build", "node_modules"]
+}

@@ -1,0 +1,28 @@
+name = "payupnow-api"
+main = "src/index.ts"
+compatibility_date = "2024-08-06"
+compatibility_flags = ["nodejs_compat"]
+minify = true
+
+[dev]
+port = 5001
+
+[vars]
+SOME_PUBLIC_KEY = "SOME-PUBLIC-KEY-123"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "payupnow-db"
+database_id = ""
+migrations_dir = "./drizzle"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [ai]
+# binding = "AI"

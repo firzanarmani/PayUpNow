@@ -1,0 +1,59 @@
+{
+  "name": "@payupnow/design-system",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./preset": {
+      "source": "./src/preset.ts",
+      "require": "./dist/preset.js",
+      "types": "./dist/preset.d.ts",
+      "import": {
+        "types": "./dist/preset.d.mts",
+        "default": "./dist/preset.mjs"
+      }
+    }
+  },
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "prepare": "npm run codegen && npm run build",
+    "codegen": "panda codegen",
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@ark-ui/anatomy": "^3.5.0",
+    "@ark-ui/react": "^3.6.2",
+    "@pandacss/dev": "^0.44.0",
+    "@payupnow/eslint-config": "workspace:*",
+    "@payupnow/styled-system": "workspace:^",
+    "@payupnow/typescript-config": "workspace:*",
+    "@tanstack/react-router": "^1.46.6",
+    "@types/node": "^22.0.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
