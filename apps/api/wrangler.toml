@@ -13,7 +13,7 @@ SOME_PUBLIC_KEY = "SOME-PUBLIC-KEY-123"
 [[d1_databases]]
 binding = "DB"
 database_name = "payupnow-db"
-database_id = ""
+database_id = "a67b942e-b48b-4483-bb4b-6c78c510c53c"
 migrations_dir = "./drizzle"
 
 # [[kv_namespaces]]

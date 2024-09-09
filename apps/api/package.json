@@ -15,6 +15,7 @@
     "db:migrate": "wrangler d1 migrations apply payupnow-db"
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.14.0",
     "@hono/zod-validator": "^0.2.2",
     "@payupnow/logger": "workspace:*",
     "drizzle-orm": "^0.33.0",
