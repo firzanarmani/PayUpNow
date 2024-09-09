@@ -18,6 +18,8 @@
     "@dotenvx/dotenvx": "^1.14.0",
     "@hono/zod-validator": "^0.2.2",
     "@payupnow/logger": "workspace:*",
+    "@payupnow/paynow-qr-generator": "workspace:^",
+    "dayjs": "^1.11.13",
     "drizzle-orm": "^0.33.0",
     "drizzle-zod": "^0.5.1",
     "hono": "^4.5.3",

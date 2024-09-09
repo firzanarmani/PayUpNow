@@ -1,0 +1,24 @@
+{
+  "name": "@payupnow/paynow-qr-generator",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@payupnow/eslint-config": "workspace:^",
+    "@payupnow/typescript-config": "workspace:^",
+    "@types/node": "^22.0.2",
+    "@types/qrcode": "^1.5.5",
+    "crc": "^4.3.2",
+    "dayjs": "^1.11.13",
+    "qrcode": "^1.5.4",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
