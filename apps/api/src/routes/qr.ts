@@ -14,7 +14,6 @@ export const QrRouter = new Hono<HonoAppType>().post(
   async (c) => {
     const formData = c.req.valid("json");
 
-    // eslint-disable-next-line @typescript-eslint/await-thenable -- Not too sure why this promise is behaving in this way
     const item = await generatePayNow({
       uen: formData.uen,
       amount: formData.amount,

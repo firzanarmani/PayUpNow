@@ -8,7 +8,17 @@ minify = true
 port = 5001
 
 [vars]
-SOME_PUBLIC_KEY = "SOME-PUBLIC-KEY-123"
+BOT_INFO = """{
+    "id":7014456183,
+    "is_bot":true,
+    "first_name":"PayUpNow",
+    "username":"PayUpNowBot",
+    "can_join_groups":true,
+    "can_read_all_group_messages":false,
+    "supports_inline_queries":false,
+    "can_connect_to_business":false,
+    "has_main_web_app":false
+}"""
 
 [[d1_databases]]
 binding = "DB"
